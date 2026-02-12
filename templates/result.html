@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Recommended Schemes</h2>
+
+<div class="results-container">
+    {% for rec_scheme in sch %}
+    <div class="rec_scheme-card {{ rec_scheme.status|lower|replace(' ', '-') }}">
+        <h3>{{ rec_scheme.scheme_name }}</h3>
+        <span class="status-badge">{{ rec_scheme.status }}</span>
+
+        <p><strong>Score:</strong> {{ rec_scheme.score }}</p>
+        <p><strong>Reason:</strong> {{ rec_scheme.reasons }}</p>
+        <p><strong>Benefits:</strong> {{ rec_scheme.benefits }}</p>
+        <p><strong>Documents:</strong> {{ rec_scheme.documents }}</p>
+        <p><strong>Deadline:</strong> {{ rec_scheme.deadline }}</p>
+        <p class="alert-text">{{ rec_scheme.alert }}</p>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #F4F7FA;
+    color: #071426;
+    margin: 0;
+}
+
+.navbar {
+    background: #142C52;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 45px;
+    filter: brightness(0) invert(1);
+}
+
+.brand-title {
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.content {
+    padding: 40px;
+}
+
+.form-card {
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    max-width: 500px;
+    margin: auto;
+}
+
+.form-card input,
+.form-card select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #D4DBE9;
+    border-radius: 6px;
+}
+
+.form-card button {
+    background: #16808D;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.form-card button:hover {
+    background: #1B9AAA;
+}
+
+.scheme-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.status-badge {
+    background: #22C55E;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.alert-text {
+    color: #EF4444;
+    font-weight: bold;
+}
+
+.footer {
+    background: #142C52;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons img {
+    height: 25px;
+    margin: 0 10px;
+}

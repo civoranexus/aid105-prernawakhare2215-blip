@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="form-card">
+    <h2>Find Government Schemes Matching Your Profile</h2>
+
+    <form action="/recommend" method="POST">
+        <input type="number" name="age" placeholder="Age" required>
+        <input type="number" name="income" placeholder="Annual Income" required>
+        <input type="text" name="state" placeholder="State" required>
+        <select name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <select name="category">
+            <option value="All">General</option>
+            <option value="SC">SC</option>
+            <option value="OBC">OBC</option>
+        </select>
+
+        <button type="submit">Get Recommendations</button>
+    </form>
+</div>
+{% endblock %}

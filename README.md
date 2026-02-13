@@ -50,3 +50,6 @@ The system assigns scores based on matching conditions and returns ranked recomm
 - Modular project structure
 
 ---
+Live Application:
+https://huggingface.co/spaces/Algocraft22/AI_Scheme_recommender
+
